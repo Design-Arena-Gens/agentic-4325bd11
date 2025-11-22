@@ -1,0 +1,34 @@
+:root{--bg:#0b1020;--card:#131833;--muted:#8fa3d6;--text:#e6ecff;--accent:#6ea8fe;--accent-2:#7ee7d6;--danger:#ff6b6b;--border:#243056}
+*{box-sizing:border-box}
+html,body{padding:0;margin:0;height:100%}
+body{font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";background:linear-gradient(180deg,#0b1020 0%, #0e1530 100%);color:var(--text)}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.header{display:flex;gap:12px;align-items:center;justify-content:space-between;margin-bottom:18px}
+.app-title{font-size:24px;font-weight:700;letter-spacing:.3px}
+.subtle{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
+@media (max-width: 900px){.grid{grid-template-columns:1fr}}
+.card{background:linear-gradient(180deg, #151b3b 0%, #0f1430 100%);border:1px solid var(--border);border-radius:14px; padding:16px}
+.card-title{font-size:14px;color:var(--muted);margin:0 0 10px}
+.input-row{display:grid;grid-template-columns: 1fr 1.2fr 1fr 1fr; gap:10px}
+@media (max-width: 700px){.input-row{grid-template-columns:1fr 1fr}}
+.input, .select{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:#0d1330;color:var(--text)}
+.button{background:linear-gradient(180deg,#2b5cff, #1b3dd9);border:1px solid #3955ff;color:white;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:600}
+.button.secondary{background:#15204a;border-color:var(--border);color:var(--text)}
+.button.danger{background:linear-gradient(180deg,#ff4b4b,#d93535);border-color:#ff6b6b}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.table{width:100%;border-collapse:separate;border-spacing:0 8px}
+.th,.td{padding:10px 12px;text-align:left;font-size:14px}
+.tr{background:#0e1433;border:1px solid var(--border);}
+.tr{border-radius:12px;overflow:hidden}
+.badge{background:#15265a;border:1px solid var(--border);color:var(--accent);padding:4px 8px;border-radius:999px;font-size:12px}
+.mono{font-variant-numeric: tabular-nums; font-feature-settings: "tnum" 1}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media (max-width: 900px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.kpi{padding:12px;border:1px solid var(--border);border-radius:12px;background:#0f1536}
+.kpi .label{color:var(--muted);font-size:12px}
+.kpi .value{font-size:20px;font-weight:700}
+.section-title{margin:8px 0 4px;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.12em}
+.footer-actions{display:flex;gap:10px;justify-content:flex-end}
+hr.sep{border:none;border-top:1px solid var(--border);margin:10px 0}
+small.help{color:var(--muted)}
